@@ -17,6 +17,8 @@ struct ContentView: View {
         
         ZStack {
             Rectangle()
+                .fill(Color.orange)
+                .ignoresSafeArea()
             
             VStack {
                 
@@ -28,12 +30,39 @@ struct ContentView: View {
                     Button("New Game") {
                         newGame()
                     }
-                    
+                }
+                
+                LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()]) {
+                    ForEach(cards.indices, id: \.self) {
+                        index in let card = cards[index]
+                        
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(card.faceUp || card.matched ? Color.white : Color.orange)
+                                .frame(height: 80)
+                                .overlay(RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.black, lineWidth: 2))
+                            
+                            if card.faceUp || card.matched {
+                                Text(card.image)
+                            }
+                            
+                            
+                        }
+                        .onTapGesture {
+                        // flip card code
+                        }
+                        
+                        
+                        
+                    }
                 }
                 
                 
             }
-            .padding()
+            .onAppear{
+                newGame()
+            }
         }
     }
     
