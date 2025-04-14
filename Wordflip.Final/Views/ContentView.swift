@@ -50,7 +50,7 @@ struct ContentView: View {
                             
                         }
                         .onTapGesture {
-                        // flip card code
+                            flipCard(at: index)
                         }
                         
                         
@@ -74,6 +74,27 @@ struct ContentView: View {
             firstFlipped = nil
             score = 0
         }
+    
+    func flipCard(at index: Int){
+        guard !cards[index].faceUp, !cards[index].matched else { return }
+        cards[index].faceUp = true
+        
+        if let firstIndex = firstFlipped {
+            if cards[firstIndex].image == cards[index].image {
+                cards[firstIndex].matched = true
+                cards[index].matched = true
+                score += 1
+            } else {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                    cards[firstIndex].faceUp = false
+                    cards[index].faceUp = false
+                }
+            }
+            firstFlipped = nil
+        } else {
+            firstFlipped = index
+        }
+      }
     }
 
 #Preview {
