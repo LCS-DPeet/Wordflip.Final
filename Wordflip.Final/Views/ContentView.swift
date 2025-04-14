@@ -24,13 +24,17 @@ struct ContentView: View {
                 
                 
                 HStack {
-                    Text("Score:")
+                    Text("Score: \(score)")
                         .foregroundStyle(.white)
+                    
+                    Spacer()
                     
                     Button("New Game") {
                         newGame()
                     }
+                    
                 }
+                .padding()
                 
                 LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()]) {
                     ForEach(cards.indices, id: \.self) {
@@ -39,7 +43,7 @@ struct ContentView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(card.faceUp || card.matched ? Color.white : Color.orange)
-                                .frame(height: 80)
+                                .frame(width: 140, height: 100)
                                 .overlay(RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.black, lineWidth: 2))
                             
@@ -53,11 +57,13 @@ struct ContentView: View {
                             flipCard(at: index)
                         }
                         
+                        .opacity(card.matched ? 0.3 : 1)
                         
                         
                     }
+                    
                 }
-                
+                .padding(10)
                 
             }
             .onAppear{
