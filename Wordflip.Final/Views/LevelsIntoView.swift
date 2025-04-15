@@ -22,6 +22,13 @@ struct LevelsIntoView: View {
                         .bold()
                         .font(.largeTitle)
                     
+                    NavigationStack{
+                        
+                        NavigationLink("Return Home"){
+                            StartingView()
+                        }
+                    }
+                    
                     HStack {
                         VStack {
                             NavigationLink("Level 1"){

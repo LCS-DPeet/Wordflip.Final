@@ -23,8 +23,24 @@ struct Level5View: View {
                     
                     
                     HStack {
-                        Text("Score: \(score)")
-                            .foregroundStyle(.white)
+                        ZStack {
+                            
+                            Rectangle()
+                                .cornerRadius(5)
+                                .foregroundStyle(.white)
+                                .frame(width: 80, height: 20)
+                            
+                            Text("Score: \(score)")
+                                .foregroundStyle(.black)
+                            
+                        }
+                        
+                        NavigationStack{
+                            
+                            NavigationLink("Return Home"){
+                                StartingView()
+                            }
+                        }
                         
                         Spacer()
                         
