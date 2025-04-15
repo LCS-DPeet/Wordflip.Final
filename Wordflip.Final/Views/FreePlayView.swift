@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct FreePlayView: View {
     
     @State private var cards: [Card] = []
     @State private var firstFlipped: Int? = nil
     @State private var score = 0
+    @State var currentEmoji = images.randomElement()!
     
     var body: some View {
         
         ZStack {
             Rectangle()
-                .fill(Color.orange)
-                .ignoresSafeArea()
+                .fill(LinearGradient( colors: [Color.green, Color.teal, Color.blue], startPoint: .topLeading, endPoint: .bottomTrailing))
             
             VStack {
                 
@@ -42,8 +42,8 @@ struct ContentView: View {
                         
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(card.faceUp || card.matched ? Color.white : Color.orange)
-                                .frame(width: 140, height: 100)
+                                .fill(card.faceUp || card.matched ? Color.white : Color.cyan)
+                                .frame(width: 200, height: 150)
                                 .overlay(RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.black, lineWidth: 2))
                             
@@ -73,8 +73,8 @@ struct ContentView: View {
     }
     
     func newGame() {
-        let image = ["🐬","🐟","🦑","🐊"]
-        let newDeck = (image + image).shuffled().map {
+        let SelectedEmojis = images.shuffled().prefix(6).map { $0.emoji }
+        let newDeck = (SelectedEmojis + SelectedEmojis) .shuffled().map {
             Card(image: $0) }
             cards = newDeck
             firstFlipped = nil
@@ -104,5 +104,5 @@ struct ContentView: View {
     }
 
 #Preview {
-    ContentView()
+    FreePlayView()
 }

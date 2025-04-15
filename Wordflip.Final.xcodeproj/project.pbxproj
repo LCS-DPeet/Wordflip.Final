@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1D0F2F12DAC78EB00D05400 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2ED2DAC78EB00D05400 /* ContentView.swift */; };
+		C1D0F2F12DAC78EB00D05400 /* FreePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2ED2DAC78EB00D05400 /* FreePlayView.swift */; };
 		C1D0F2F22DAC78EB00D05400 /* Wordflip_FinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2EF2DAC78EB00D05400 /* Wordflip_FinalApp.swift */; };
 		C1D0F2F32DAC78EB00D05400 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D0F2EA2DAC78EB00D05400 /* Preview Assets.xcassets */; };
 		C1D0F2F42DAC78EB00D05400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D0F2EC2DAC78EB00D05400 /* Assets.xcassets */; };
 		C1D0F2FB2DAC7AE800D05400 /* CardStucture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2FA2DAC7AE800D05400 /* CardStucture.swift */; };
+		C1D0F2FD2DAC8D9700D05400 /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2FC2DAC8D9700D05400 /* StartingView.swift */; };
+		C1D0F2FF2DADE41400D05400 /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2FE2DADE41400D05400 /* Emojis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1D0F2CE2DAC785D00D05400 /* Wordflip.Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordflip.Final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D0F2EA2DAC78EB00D05400 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1D0F2EC2DAC78EB00D05400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C1D0F2ED2DAC78EB00D05400 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C1D0F2ED2DAC78EB00D05400 /* FreePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePlayView.swift; sourceTree = "<group>"; };
 		C1D0F2EE2DAC78EB00D05400 /* Wordflip_Final.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wordflip_Final.entitlements; sourceTree = "<group>"; };
 		C1D0F2EF2DAC78EB00D05400 /* Wordflip_FinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordflip_FinalApp.swift; sourceTree = "<group>"; };
 		C1D0F2FA2DAC7AE800D05400 /* CardStucture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStucture.swift; sourceTree = "<group>"; };
+		C1D0F2FC2DAC8D9700D05400 /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
+		C1D0F2FE2DADE41400D05400 /* Emojis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emojis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				C1D0F2FA2DAC7AE800D05400 /* CardStucture.swift */,
+				C1D0F2FE2DADE41400D05400 /* Emojis.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -91,7 +96,8 @@
 		C1D0F2F72DAC790000D05400 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C1D0F2ED2DAC78EB00D05400 /* ContentView.swift */,
+				C1D0F2FC2DAC8D9700D05400 /* StartingView.swift */,
+				C1D0F2ED2DAC78EB00D05400 /* FreePlayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1D0F2F12DAC78EB00D05400 /* ContentView.swift in Sources */,
+				C1D0F2FD2DAC8D9700D05400 /* StartingView.swift in Sources */,
+				C1D0F2F12DAC78EB00D05400 /* FreePlayView.swift in Sources */,
+				C1D0F2FF2DADE41400D05400 /* Emojis.swift in Sources */,
 				C1D0F2FB2DAC7AE800D05400 /* CardStucture.swift in Sources */,
 				C1D0F2F22DAC78EB00D05400 /* Wordflip_FinalApp.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ import SwiftUI
 struct Wordflip_FinalApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FreePlayView()
         }
     }
 }
