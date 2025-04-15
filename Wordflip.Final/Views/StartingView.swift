@@ -26,7 +26,7 @@ struct StartingView: View {
                     }
                     
                     NavigationLink("Levels"){
-                        //levelsView
+                        LevelsIntoView()
                     }
                     
                     NavigationLink("Practice"){

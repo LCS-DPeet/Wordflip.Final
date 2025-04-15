@@ -14,6 +14,17 @@
 		C1D0F2FB2DAC7AE800D05400 /* CardStucture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2FA2DAC7AE800D05400 /* CardStucture.swift */; };
 		C1D0F2FD2DAC8D9700D05400 /* StartingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2FC2DAC8D9700D05400 /* StartingView.swift */; };
 		C1D0F2FF2DADE41400D05400 /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2FE2DADE41400D05400 /* Emojis.swift */; };
+		C1D0F3012DADEC4500D05400 /* LevelsIntoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3002DADEC4500D05400 /* LevelsIntoView.swift */; };
+		C1D0F3032DADEEC700D05400 /* Level1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3022DADEEC700D05400 /* Level1View.swift */; };
+		C1D0F3052DADEED800D05400 /* Level2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3042DADEED800D05400 /* Level2View.swift */; };
+		C1D0F3072DADEEE200D05400 /* Level3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3062DADEEE200D05400 /* Level3View.swift */; };
+		C1D0F3092DADEEEB00D05400 /* Level4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3082DADEEEB00D05400 /* Level4View.swift */; };
+		C1D0F30B2DADEEF400D05400 /* Level5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F30A2DADEEF400D05400 /* Level5View.swift */; };
+		C1D0F30D2DADEF0200D05400 /* Level6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F30C2DADEF0200D05400 /* Level6View.swift */; };
+		C1D0F30F2DADEF0C00D05400 /* Level7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F30E2DADEF0B00D05400 /* Level7View.swift */; };
+		C1D0F3112DADEF1800D05400 /* Level8View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3102DADEF1800D05400 /* Level8View.swift */; };
+		C1D0F3132DADEF2100D05400 /* Level9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3122DADEF2100D05400 /* Level9View.swift */; };
+		C1D0F3152DADEF3200D05400 /* Level10View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3142DADEF3200D05400 /* Level10View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,17 @@
 		C1D0F2FA2DAC7AE800D05400 /* CardStucture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStucture.swift; sourceTree = "<group>"; };
 		C1D0F2FC2DAC8D9700D05400 /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
 		C1D0F2FE2DADE41400D05400 /* Emojis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emojis.swift; sourceTree = "<group>"; };
+		C1D0F3002DADEC4500D05400 /* LevelsIntoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsIntoView.swift; sourceTree = "<group>"; };
+		C1D0F3022DADEEC700D05400 /* Level1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1View.swift; sourceTree = "<group>"; };
+		C1D0F3042DADEED800D05400 /* Level2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level2View.swift; sourceTree = "<group>"; };
+		C1D0F3062DADEEE200D05400 /* Level3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level3View.swift; sourceTree = "<group>"; };
+		C1D0F3082DADEEEB00D05400 /* Level4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level4View.swift; sourceTree = "<group>"; };
+		C1D0F30A2DADEEF400D05400 /* Level5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level5View.swift; sourceTree = "<group>"; };
+		C1D0F30C2DADEF0200D05400 /* Level6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level6View.swift; sourceTree = "<group>"; };
+		C1D0F30E2DADEF0B00D05400 /* Level7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level7View.swift; sourceTree = "<group>"; };
+		C1D0F3102DADEF1800D05400 /* Level8View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level8View.swift; sourceTree = "<group>"; };
+		C1D0F3122DADEF2100D05400 /* Level9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level9View.swift; sourceTree = "<group>"; };
+		C1D0F3142DADEF3200D05400 /* Level10View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level10View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +120,17 @@
 			children = (
 				C1D0F2FC2DAC8D9700D05400 /* StartingView.swift */,
 				C1D0F2ED2DAC78EB00D05400 /* FreePlayView.swift */,
+				C1D0F3002DADEC4500D05400 /* LevelsIntoView.swift */,
+				C1D0F3022DADEEC700D05400 /* Level1View.swift */,
+				C1D0F3042DADEED800D05400 /* Level2View.swift */,
+				C1D0F3062DADEEE200D05400 /* Level3View.swift */,
+				C1D0F3082DADEEEB00D05400 /* Level4View.swift */,
+				C1D0F30A2DADEEF400D05400 /* Level5View.swift */,
+				C1D0F30C2DADEF0200D05400 /* Level6View.swift */,
+				C1D0F30E2DADEF0B00D05400 /* Level7View.swift */,
+				C1D0F3102DADEF1800D05400 /* Level8View.swift */,
+				C1D0F3122DADEF2100D05400 /* Level9View.swift */,
+				C1D0F3142DADEF3200D05400 /* Level10View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,11 +208,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D0F3152DADEF3200D05400 /* Level10View.swift in Sources */,
+				C1D0F30B2DADEEF400D05400 /* Level5View.swift in Sources */,
+				C1D0F3052DADEED800D05400 /* Level2View.swift in Sources */,
+				C1D0F3072DADEEE200D05400 /* Level3View.swift in Sources */,
 				C1D0F2FD2DAC8D9700D05400 /* StartingView.swift in Sources */,
+				C1D0F30D2DADEF0200D05400 /* Level6View.swift in Sources */,
+				C1D0F3012DADEC4500D05400 /* LevelsIntoView.swift in Sources */,
+				C1D0F3112DADEF1800D05400 /* Level8View.swift in Sources */,
 				C1D0F2F12DAC78EB00D05400 /* FreePlayView.swift in Sources */,
+				C1D0F3032DADEEC700D05400 /* Level1View.swift in Sources */,
 				C1D0F2FF2DADE41400D05400 /* Emojis.swift in Sources */,
 				C1D0F2FB2DAC7AE800D05400 /* CardStucture.swift in Sources */,
+				C1D0F3092DADEEEB00D05400 /* Level4View.swift in Sources */,
+				C1D0F3132DADEF2100D05400 /* Level9View.swift in Sources */,
 				C1D0F2F22DAC78EB00D05400 /* Wordflip_FinalApp.swift in Sources */,
+				C1D0F30F2DADEF0C00D05400 /* Level7View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
