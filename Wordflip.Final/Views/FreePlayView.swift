@@ -89,30 +89,45 @@ struct FreePlayView: View {
     }
     
     func newGame() {
+        //pick 6 of the potential emojis and shuffle them
         let SelectedEmojis = images.shuffled().prefix(6).map { $0.emoji }
+        // Duplicates the card for matches and shuffles them
         let newDeck = (SelectedEmojis + SelectedEmojis) .shuffled().map {
             Card(image: $0) }
+        //Sets cards to this created deck
             cards = newDeck
+        //clears first flip as you start with no flipped cards
             firstFlipped = nil
+        //sets starting score to zero
             score = 0
         }
     
+    //Takes an idex of a card in the array
     func flipCard(at index: Int){
+        // Checks if the card is already facedown or face up
         guard !cards[index].faceUp, !cards[index].matched else { return }
+        //Flips the selected card face up
         cards[index].faceUp = true
         
+        //checks for a card already flipped up before
         if let firstIndex = firstFlipped {
+            //If the images match on the cards mark as matched + score
             if cards[firstIndex].image == cards[index].image {
                 cards[firstIndex].matched = true
                 cards[index].matched = true
                 score += 1
+                
+                //If they dont match, wait .7 secods and flip down again
             } else {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                     cards[firstIndex].faceUp = false
                     cards[index].faceUp = false
                 }
             }
+            
+            //clear the first flip when done with the pair
             firstFlipped = nil
+            //if no card was flipped prior then store card until 2nd is flipped
         } else {
             firstFlipped = index
         }
