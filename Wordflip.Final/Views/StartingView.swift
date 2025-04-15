@@ -29,12 +29,8 @@ struct StartingView: View {
                         LevelsIntoView()
                     }
                     
-                    NavigationLink("Practice"){
-                        //practiceView
-                    }
-                    
                     NavigationLink("Credits") {
-                        //creditView
+                        CreditsView()
                     }
                     
                 }

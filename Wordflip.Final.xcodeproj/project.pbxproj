@@ -25,6 +25,7 @@
 		C1D0F3112DADEF1800D05400 /* Level8View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3102DADEF1800D05400 /* Level8View.swift */; };
 		C1D0F3132DADEF2100D05400 /* Level9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3122DADEF2100D05400 /* Level9View.swift */; };
 		C1D0F3152DADEF3200D05400 /* Level10View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3142DADEF3200D05400 /* Level10View.swift */; };
+		C1D0F3172DAED8C600D05400 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F3162DAED8C600D05400 /* CreditsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		C1D0F3102DADEF1800D05400 /* Level8View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level8View.swift; sourceTree = "<group>"; };
 		C1D0F3122DADEF2100D05400 /* Level9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level9View.swift; sourceTree = "<group>"; };
 		C1D0F3142DADEF3200D05400 /* Level10View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level10View.swift; sourceTree = "<group>"; };
+		C1D0F3162DAED8C600D05400 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				C1D0F3102DADEF1800D05400 /* Level8View.swift */,
 				C1D0F3122DADEF2100D05400 /* Level9View.swift */,
 				C1D0F3142DADEF3200D05400 /* Level10View.swift */,
+				C1D0F3162DAED8C600D05400 /* CreditsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				C1D0F3032DADEEC700D05400 /* Level1View.swift in Sources */,
 				C1D0F2FF2DADE41400D05400 /* Emojis.swift in Sources */,
 				C1D0F2FB2DAC7AE800D05400 /* CardStucture.swift in Sources */,
+				C1D0F3172DAED8C600D05400 /* CreditsView.swift in Sources */,
 				C1D0F3092DADEEEB00D05400 /* Level4View.swift in Sources */,
 				C1D0F3132DADEF2100D05400 /* Level9View.swift in Sources */,
 				C1D0F2F22DAC78EB00D05400 /* Wordflip_FinalApp.swift in Sources */,
