@@ -98,7 +98,6 @@ struct FreePlayView: View {
             cards = newDeck
         //clears first flip as you start with no flipped cards
             firstFlipped = nil
-        //sets starting score to zero
             score = 0
         }
     
