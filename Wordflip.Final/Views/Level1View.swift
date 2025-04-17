@@ -41,8 +41,8 @@ struct Level1View: View {
                         
                         NavigationStack{
                             
-                            NavigationLink("Return Home"){
-                                StartingView()
+                            NavigationLink("Return To Levels"){
+                                LevelsIntoView()
                             }
                         }
                         

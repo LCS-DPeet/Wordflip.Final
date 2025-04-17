@@ -16,7 +16,7 @@ struct StartingView: View {
                 
                 VStack {
                     
-                    Text("WordFlip")
+                    Text("PicFlip")
                         .font(.system(size: 100))
                         .fontWeight(.bold)
                         .foregroundStyle(.white)
