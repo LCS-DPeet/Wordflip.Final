@@ -1,5 +1,5 @@
 //
-//  Level4View.swift
+//  Level3View.swift
 //  Wordflip.Final
 //
 //  Created by Danika Peet on 2025-04-14.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Level4View: View {
+struct Level3View: View {
     @State private var cards: [Card] = []
     @State private var firstFlipped: Int? = nil
     @State private var score = 0
@@ -37,8 +37,8 @@ struct Level4View: View {
                     
                     NavigationStack{
                         
-                        NavigationLink("Return Home"){
-                            StartingView()
+                        NavigationLink("Return To Levels"){
+                            LevelsIntoView()
                         }
                     }
                     
@@ -47,10 +47,9 @@ struct Level4View: View {
                     NavigationStack{
                         
                         NavigationLink("Next Level"){
-                            Level5View()
+                            Level4View()
                         }
                     }
-                    
                     
                     Button("New Game") {
                         newGame()
@@ -96,7 +95,7 @@ struct Level4View: View {
     }
     
     func newGame() {
-        let SelectedEmojis = images.shuffled().prefix(5).map { $0.emoji }
+        let SelectedEmojis = images.shuffled().prefix(4).map { $0.emoji }
         let newDeck = (SelectedEmojis + SelectedEmojis) .shuffled().map {
             Card(image: $0) }
             cards = newDeck
@@ -128,5 +127,5 @@ struct Level4View: View {
 
 
 #Preview {
-    Level4View()
+    Level3View()
 }

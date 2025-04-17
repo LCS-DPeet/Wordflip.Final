@@ -1,5 +1,5 @@
 //
-//  Level7View.swift
+//  Level8View.swift
 //  Wordflip.Final
 //
 //  Created by Danika Peet on 2025-04-14.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Level7View: View {
+struct Level8View: View {
     @State private var cards: [Card] = []
     @State private var firstFlipped: Int? = nil
     @State private var score = 0
@@ -37,8 +37,8 @@ struct Level7View: View {
                     
                     NavigationStack{
                         
-                        NavigationLink("Return Home"){
-                            StartingView()
+                        NavigationLink("Return To Levels"){
+                            LevelsIntoView()
                         }
                     }
                     
@@ -47,7 +47,7 @@ struct Level7View: View {
                     NavigationStack{
                         
                         NavigationLink("Next Level"){
-                            Level8View()
+                            Level9View()
                         }
                     }
                     
@@ -59,7 +59,7 @@ struct Level7View: View {
                 }
                 .padding()
                 
-                LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()]) {
+                LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem(), GridItem()]) {
                     ForEach(cards.indices, id: \.self) {
                         index in let card = cards[index]
                         
@@ -96,7 +96,7 @@ struct Level7View: View {
     }
     
     func newGame() {
-        let SelectedEmojis = images.shuffled().prefix(8).map { $0.emoji }
+        let SelectedEmojis = images.shuffled().prefix(9).map { $0.emoji }
         let newDeck = (SelectedEmojis + SelectedEmojis) .shuffled().map {
             Card(image: $0) }
             cards = newDeck
@@ -128,5 +128,5 @@ struct Level7View: View {
 
 
 #Preview {
-    Level7View()
+    Level8View()
 }

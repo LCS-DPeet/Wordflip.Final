@@ -1,5 +1,5 @@
 //
-//  Level9View.swift
+//  Level10View.swift
 //  Wordflip.Final
 //
 //  Created by Danika Peet on 2025-04-14.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Level9View: View {
+struct Level10View: View {
     @State private var cards: [Card] = []
     @State private var firstFlipped: Int? = nil
     @State private var score = 0
@@ -34,22 +34,15 @@ struct Level9View: View {
                             .foregroundStyle(.black)
                         
                     }
-                    NavigationStack{
-                        
-                        NavigationLink("Return Home"){
-                            StartingView()
-                        }
-                    }
                     
                     Spacer()
                     
                     NavigationStack{
                         
-                        NavigationLink("Next Level"){
-                            Level10View()
+                        NavigationLink("Return To Levels"){
+                            LevelsIntoView()
                         }
                     }
-                    
                     
                     Button("New Game") {
                         newGame()
@@ -58,14 +51,14 @@ struct Level9View: View {
                 }
                 .padding()
                 
-                LazyVGrid(columns: [GridItem(), GridItem(),  GridItem(), GridItem(), GridItem()]) {
+                LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem(), GridItem(), GridItem()]) {
                     ForEach(cards.indices, id: \.self) {
                         index in let card = cards[index]
                         
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(card.faceUp || card.matched ? Color.white : Color.cyan)
-                                .frame(width: 140, height: 100)
+                                .frame(width: 120, height: 100)
                                 .overlay(RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.black, lineWidth: 2))
                             
@@ -95,7 +88,7 @@ struct Level9View: View {
     }
     
     func newGame() {
-        let SelectedEmojis = images.shuffled().prefix(10).map { $0.emoji }
+        let SelectedEmojis = images.shuffled().prefix(12).map { $0.emoji }
         let newDeck = (SelectedEmojis + SelectedEmojis) .shuffled().map {
             Card(image: $0) }
             cards = newDeck
@@ -127,5 +120,5 @@ struct Level9View: View {
 
 
 #Preview {
-    Level9View()
+    Level10View()
 }

@@ -1,5 +1,5 @@
 //
-//  Level6View.swift
+//  Level9View.swift
 //  Wordflip.Final
 //
 //  Created by Danika Peet on 2025-04-14.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Level6View: View {
+struct Level9View: View {
     @State private var cards: [Card] = []
     @State private var firstFlipped: Int? = nil
     @State private var score = 0
@@ -34,11 +34,10 @@ struct Level6View: View {
                             .foregroundStyle(.black)
                         
                     }
-                    
                     NavigationStack{
                         
-                        NavigationLink("Return Home"){
-                            StartingView()
+                        NavigationLink("Return To Levels"){
+                            LevelsIntoView()
                         }
                     }
                     
@@ -47,7 +46,7 @@ struct Level6View: View {
                     NavigationStack{
                         
                         NavigationLink("Next Level"){
-                            Level7View()
+                            Level10View()
                         }
                     }
                     
@@ -59,7 +58,7 @@ struct Level6View: View {
                 }
                 .padding()
                 
-                LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()]) {
+                LazyVGrid(columns: [GridItem(), GridItem(),  GridItem(), GridItem(), GridItem()]) {
                     ForEach(cards.indices, id: \.self) {
                         index in let card = cards[index]
                         
@@ -96,7 +95,7 @@ struct Level6View: View {
     }
     
     func newGame() {
-        let SelectedEmojis = images.shuffled().prefix(7).map { $0.emoji }
+        let SelectedEmojis = images.shuffled().prefix(10).map { $0.emoji }
         let newDeck = (SelectedEmojis + SelectedEmojis) .shuffled().map {
             Card(image: $0) }
             cards = newDeck
@@ -128,5 +127,5 @@ struct Level6View: View {
 
 
 #Preview {
-    Level6View()
+    Level9View()
 }

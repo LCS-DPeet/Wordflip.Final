@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C1D0F2F12DAC78EB00D05400 /* FreePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2ED2DAC78EB00D05400 /* FreePlayView.swift */; };
-		C1D0F2F22DAC78EB00D05400 /* Wordflip_FinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2EF2DAC78EB00D05400 /* Wordflip_FinalApp.swift */; };
+		C1D0F2F22DAC78EB00D05400 /* Picflip_FinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2EF2DAC78EB00D05400 /* Picflip_FinalApp.swift */; };
 		C1D0F2F32DAC78EB00D05400 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D0F2EA2DAC78EB00D05400 /* Preview Assets.xcassets */; };
 		C1D0F2F42DAC78EB00D05400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D0F2EC2DAC78EB00D05400 /* Assets.xcassets */; };
 		C1D0F2FB2DAC7AE800D05400 /* CardStucture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D0F2FA2DAC7AE800D05400 /* CardStucture.swift */; };
@@ -33,8 +33,8 @@
 		C1D0F2EA2DAC78EB00D05400 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1D0F2EC2DAC78EB00D05400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1D0F2ED2DAC78EB00D05400 /* FreePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePlayView.swift; sourceTree = "<group>"; };
-		C1D0F2EE2DAC78EB00D05400 /* Wordflip_Final.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wordflip_Final.entitlements; sourceTree = "<group>"; };
-		C1D0F2EF2DAC78EB00D05400 /* Wordflip_FinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordflip_FinalApp.swift; sourceTree = "<group>"; };
+		C1D0F2EE2DAC78EB00D05400 /* Picflip_Final.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Picflip_Final.entitlements; sourceTree = "<group>"; };
+		C1D0F2EF2DAC78EB00D05400 /* Picflip_FinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picflip_FinalApp.swift; sourceTree = "<group>"; };
 		C1D0F2FA2DAC7AE800D05400 /* CardStucture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStucture.swift; sourceTree = "<group>"; };
 		C1D0F2FC2DAC8D9700D05400 /* StartingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingView.swift; sourceTree = "<group>"; };
 		C1D0F2FE2DADE41400D05400 /* Emojis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emojis.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		C1D0F2C52DAC785D00D05400 = {
 			isa = PBXGroup;
 			children = (
-				C1D0F2F02DAC78EB00D05400 /* Wordflip.Final */,
+				C1D0F2F02DAC78EB00D05400 /* Picflip.Final */,
 				C1D0F2CF2DAC785D00D05400 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,30 +82,22 @@
 		C1D0F2EB2DAC78EB00D05400 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C1D0F2EC2DAC78EB00D05400 /* Assets.xcassets */,
 				C1D0F2EA2DAC78EB00D05400 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C1D0F2F02DAC78EB00D05400 /* Wordflip.Final */ = {
+		C1D0F2F02DAC78EB00D05400 /* Picflip.Final */ = {
 			isa = PBXGroup;
 			children = (
-				C1D0F2EF2DAC78EB00D05400 /* Wordflip_FinalApp.swift */,
-				C1D0F2EE2DAC78EB00D05400 /* Wordflip_Final.entitlements */,
+				C1D0F2EF2DAC78EB00D05400 /* Picflip_FinalApp.swift */,
+				C1D0F2EE2DAC78EB00D05400 /* Picflip_Final.entitlements */,
 				C1D0F2F62DAC78F700D05400 /* Functions */,
 				C1D0F2F72DAC790000D05400 /* Views */,
-				C1D0F2F52DAC78EE00D05400 /* Models */,
 				C1D0F2EB2DAC78EB00D05400 /* Preview Content */,
+				C1D0F2EC2DAC78EB00D05400 /* Assets.xcassets */,
 			);
-			path = Wordflip.Final;
-			sourceTree = "<group>";
-		};
-		C1D0F2F52DAC78EE00D05400 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
+			path = Picflip.Final;
 			sourceTree = "<group>";
 		};
 		C1D0F2F62DAC78F700D05400 /* Functions */ = {
@@ -175,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C1D0F2C92DAC785D00D05400 /* Build configuration list for PBXProject "Wordflip.Final" */;
+			buildConfigurationList = C1D0F2C92DAC785D00D05400 /* Build configuration list for PBXProject "Picflip.Final" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -226,7 +218,7 @@
 				C1D0F3172DAED8C600D05400 /* CreditsView.swift in Sources */,
 				C1D0F3092DADEEEB00D05400 /* Level4View.swift in Sources */,
 				C1D0F3132DADEF2100D05400 /* Level9View.swift in Sources */,
-				C1D0F2F22DAC78EB00D05400 /* Wordflip_FinalApp.swift in Sources */,
+				C1D0F2F22DAC78EB00D05400 /* Picflip_FinalApp.swift in Sources */,
 				C1D0F30F2DADEF0C00D05400 /* Level7View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +401,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C1D0F2C92DAC785D00D05400 /* Build configuration list for PBXProject "Wordflip.Final" */ = {
+		C1D0F2C92DAC785D00D05400 /* Build configuration list for PBXProject "Picflip.Final" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1D0F2DB2DAC786000D05400 /* Debug */,

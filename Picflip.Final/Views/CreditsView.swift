@@ -15,9 +15,14 @@ struct CreditsView: View {
             Rectangle()
                 .fill(LinearGradient( colors: [Color.green, Color.teal, Color.blue], startPoint: .topLeading, endPoint: .bottomTrailing))
             
-            
             VStack {
                 
+            NavigationStack {
+                NavigationLink("Return Home"){
+                    StartingView()
+                }
+            }
+           
                 Text("Credits:")
                     .foregroundStyle(.white)
                     .bold()
@@ -50,14 +55,14 @@ struct CreditsView: View {
                         .font(.title2)
                         .bold()
                     
-                    Text("https://chatgpt.com/share/67fea598-8888-8004-a552-8c25560c51c2")
+                    Text("All code assisted by ChatGPT is listed in the comments")
                         .foregroundStyle(.white)
                         .font(.caption2)
                     
                 }.padding()
                 
                 
-                Text("App Made By Danika Peet April 15th 2025")
+                Text("App Made April 15th 2025")
                     .foregroundStyle(.white)
                     .bold()
                     .font(.title)

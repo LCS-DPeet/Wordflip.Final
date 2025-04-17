@@ -1,5 +1,5 @@
 //
-//  Level3View.swift
+//  Level6View.swift
 //  Wordflip.Final
 //
 //  Created by Danika Peet on 2025-04-14.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Level3View: View {
+struct Level6View: View {
     @State private var cards: [Card] = []
     @State private var firstFlipped: Int? = nil
     @State private var score = 0
@@ -37,8 +37,8 @@ struct Level3View: View {
                     
                     NavigationStack{
                         
-                        NavigationLink("Return Home"){
-                            StartingView()
+                        NavigationLink("Return To Levels"){
+                            LevelsIntoView()
                         }
                     }
                     
@@ -47,9 +47,10 @@ struct Level3View: View {
                     NavigationStack{
                         
                         NavigationLink("Next Level"){
-                            Level4View()
+                            Level7View()
                         }
                     }
+                    
                     
                     Button("New Game") {
                         newGame()
@@ -65,7 +66,7 @@ struct Level3View: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(card.faceUp || card.matched ? Color.white : Color.cyan)
-                                .frame(width: 200, height: 150)
+                                .frame(width: 140, height: 100)
                                 .overlay(RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.black, lineWidth: 2))
                             
@@ -95,7 +96,7 @@ struct Level3View: View {
     }
     
     func newGame() {
-        let SelectedEmojis = images.shuffled().prefix(4).map { $0.emoji }
+        let SelectedEmojis = images.shuffled().prefix(7).map { $0.emoji }
         let newDeck = (SelectedEmojis + SelectedEmojis) .shuffled().map {
             Card(image: $0) }
             cards = newDeck
@@ -127,5 +128,5 @@ struct Level3View: View {
 
 
 #Preview {
-    Level3View()
+    Level6View()
 }

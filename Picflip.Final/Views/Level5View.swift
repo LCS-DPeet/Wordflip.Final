@@ -1,5 +1,5 @@
 //
-//  Level1View.swift
+//  Level5View.swift
 //  Wordflip.Final
 //
 //  Created by Danika Peet on 2025-04-14.
@@ -7,16 +7,13 @@
 
 import SwiftUI
 
-struct Level1View: View {
-    
-    @State private var cards: [Card] = []
-    @State private var firstFlipped: Int? = nil
-    @State private var score = 0
-    @State var currentEmoji = images.randomElement()!
-    
-    
-    var body: some View {
-       
+struct Level5View: View {
+        @State private var cards: [Card] = []
+        @State private var firstFlipped: Int? = nil
+        @State private var score = 0
+        @State var currentEmoji = images.randomElement()!
+        
+        var body: some View {
             
             ZStack {
                 Rectangle()
@@ -26,7 +23,6 @@ struct Level1View: View {
                     
                     
                     HStack {
-                        
                         ZStack {
                             
                             Rectangle()
@@ -41,16 +37,17 @@ struct Level1View: View {
                         
                         NavigationStack{
                             
-                            NavigationLink("Return Home"){
-                                StartingView()
+                            NavigationLink("Return To Levels"){
+                                LevelsIntoView()
                             }
                         }
                         
                         Spacer()
+                        
                         NavigationStack{
                             
                             NavigationLink("Next Level"){
-                                Level2View()
+                                Level6View()
                             }
                         }
                         
@@ -61,14 +58,14 @@ struct Level1View: View {
                     }
                     .padding()
                     
-                    LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()]) {
+                    LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]) {
                         ForEach(cards.indices, id: \.self) {
                             index in let card = cards[index]
                             
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
                                     .fill(card.faceUp || card.matched ? Color.white : Color.cyan)
-                                    .frame(width: 200, height: 150)
+                                    .frame(width: 140, height: 100)
                                     .overlay(RoundedRectangle(cornerRadius: 10)
                                         .stroke(Color.black, lineWidth: 2))
                                 
@@ -98,13 +95,13 @@ struct Level1View: View {
         }
         
         func newGame() {
-            let SelectedEmojis = images.shuffled().prefix(2).map { $0.emoji }
+            let SelectedEmojis = images.shuffled().prefix(6).map { $0.emoji }
             let newDeck = (SelectedEmojis + SelectedEmojis) .shuffled().map {
                 Card(image: $0) }
-            cards = newDeck
-            firstFlipped = nil
-            score = 0
-        }
+                cards = newDeck
+                firstFlipped = nil
+                score = 0
+            }
         
         func flipCard(at index: Int){
             guard !cards[index].faceUp, !cards[index].matched else { return }
@@ -125,10 +122,9 @@ struct Level1View: View {
             } else {
                 firstFlipped = index
             }
-        }
+          }
     }
 
-
 #Preview {
-    Level1View()
+    Level5View()
 }
